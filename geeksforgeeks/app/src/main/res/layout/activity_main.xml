@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <!-- Nested Scroll view -->
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <!-- Linear layout to contain 2 text view and button -->
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <!-- showing random text 1 from strings.xml file -->
+    <TextView
+        android:text="@string/random_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- simple button -->
+    <Button
+        android:textSize="32dp"
+        android:text="Nested Scroll View "
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+
+    <!-- showing random text 2 from strings.xml file -->
+    <TextView
+        android:text="@string/random_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+  </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
